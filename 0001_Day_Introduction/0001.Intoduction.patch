@@ -1,0 +1,61 @@
+Introduction-:
+Mindset 
+Hardwork
+Class Time -: 60 (10 + 50)
+Learning Strategy : 1. make Notes (The Feynman Technique)
+Leaerning from Errors 
+save your work -: (Github )
+
+Goal -:  You are in position to write any code in c and making logic
+Duration -:  2.5 months (3 Months)
+Test -: 15 Days -: (cover) -: 15 Marks MCQ + 10 (Program)
+Daily -: 2 Assignmengts
+
+
+Flow -: Adiyogi (Tamilnadu)
+Location -: Tamilnadu
+
+ahmedabad -: Chennai -: Tamilnadu
+Flight -:
+Train -: 
+
+===================================================
+
+
+Compiler           -- Turbo C -- GCC 
+Operation System   -- Widnows  - Linux
+Hardware           -- X86     -- X86
+
+O/p                - .exe     -- a.out
+
+	
+
+Compiler -: input .c --> a.out (.exe)  -:
+Compilation Steps- : nothing but hhow to compile our program and generate binary files.
+Windows -: Visual Studion - Windows
+	   vi Editor      - linux (Ubantu)
+	  
+=======================================================
+#include<stdio.h>
+//global variable
+void my_function(int); // Function_Declaration
+int main()
+{
+
+        //local variable
+	printf("Hello World\n");
+	// Logic  y= a+b;
+	// function call my_function(y);
+}
+
+void my_fucntion(int k)  // Function defination
+{
+
+printf("In function print value k ");
+
+
+}
+	  
+	   
+	   
+	   
