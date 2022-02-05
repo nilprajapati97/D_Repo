@@ -1,0 +1,255 @@
+Data Type 
+==============
+
+
+Program =: Program is processing of data
+
+What is data?
+		constant data
+		variable data
+		
+		
+		
+Data Types
+----------------
+
+1.Primary DtataTypes
+
+	integer
+	charcter
+	float
+	double
+	
+	
+2.Secondary DataTypes
+	
+	Pointer
+	Array
+	
+3.Userdefine DataTypes		
+
+	structure
+	Union
+	Bitfield
+============================
+
+
+prototype Variable name :
+
+ int i;  --: i is integer types of variable
+ char ch;
+ float f;
+ double d; 	
+	
+Note -:1st letter of variable should not be digit.
+
+
+char ch,ch1 ;  == Valid
+char 1wr;       == Not valid
+
+Variable name ma
+      'a'....................'z'
+      'A'......................'Z'
+      '0'.....................'9'
+      
+
+Constant -:
+--------------
+1.char constant
+      'a'....................'z'
+      'A'......................'Z'
+      '0'.....................'9'
+
+2. Integer constant
+-----------------------------
+
+	123 , 0x123 ,0123  
+	
+	decimal = 123
+	Hexadecimal = 0x123 
+	Octol = 0123
+	
+	
+
+xxxx  xxxx  xxxx
+1       2    3
+	  
+0001  0010 0011 = 0x123 (hex)
+
+256 + 32 + 2 +1 = 291 (Decimal)
+2^9 + 2^6 +2^1 +2^0 =
+
+
+
+              2^3  2^2  2^1  2^0
+               8    4    2    1  
+
+
+Octol = 0123 
+---------------------
+Dec Bin   Octol
+0    000    0
+1    001    1
+2    010    2
+3    011    3
+4    100    4 
+5    101    5
+6    110    6
+7    111    7
+8  001 000  = 10
+
+
+3. Float constant 
+-------------------
+	1.46 f , -5.7 f
+
+4 .Double COnstant 
+--------------------
+      1.358364244 , -2.3500000
+      
+      
+5. string constant
+-----------------------
+
+"Diploma" , "Visnagar"
+
+===========================================================
+2 Varibale -:
+=============================================================
+  
+  
+  charctor ;
+-------------------------
+char -: Keyword of charactor
+
+char ch ;
+
+
+Size = 1byte = 8 bits
+Min  =  all 0 = 0
+Max  =  all 1 = 255
+Range = 0 to 255
+
+
+XXXX XXXX 
+--------------------
+	0000 0000  = 0 Min
+	1111 1111  = 255 Max
+     1	0000 0000  = 256   (0) 
+     
+     ch= 280 ;
+	
+	 Limit
+	 0...................................127 128..........................255
+	 
+	 0..............255  --> 280 -255 = 25 
+	    
+	                  25-1 = 24
+	  0....24  = 
+	  
+	  
+	  280......24 
+	
+	
+	0001 
++          1
+===============
+        0010
+        
+
+2.How We are storing Negative numbers in memory?
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+	
+
+
+
+
+
+1. integer
+====================
+
+
+
+	
+	
+
+
+
+
