@@ -1,0 +1,109 @@
+Integer Data Types
+----------------------
+syntax -:
+			int y;
+			      y is variable of integer type
+Size -: 4 Bytes (32 Bits) 
+Range -: 2^32 -1 (4,294,967,296 -1)
+Mini -: 0
+Max -:4,294,967,295
+
+   2^32 = 2 * 2 * 2^30 = 2^(2+30) 
+
+ex-        =16
+        =4  *   4 =  2*2*2*2
+		    2^(1+1+1+1) = 2^4 = 16
+			
+        //2^2 * 2^2 = 2 ^ (2+2) = 2^4 
+===============================================
+   2^32 = 2^2 *2^30  =2^(2+30)
+	      = 4 *(2^30) 
+
+
+0000 0000
+4 bits = nible
+2 nible = 1byte
+
+8 bits= 1 byte
+1byte	
+1024 = 1 kb (2^10)
+1024kb = 1mb (2^10)
+1024 mb= 1Gb (2^10)
+
+     2^30 = 1Gb
+
+		=4 * (2^30)
+		= 4 * (1Gb)
+		= 4G
+range = 0 .....4G
+
+1.Unsigned int
+2.signed int ;
+--------------------
+
+1.Unsigned int
+================
+Size -: 4 Bytes (32 Bits) 
+Range -: 2^32 -1 (4,294,967,296 -1)
+Mini -: 0
+Max -:4,294,967,295
+				  
+
+unsigned char ch=10;  // 1byte represent
+					0000 1010 
+unsigned int ch=10;  // 4bytes represent
+					0000 0000    0000 0000   0000 0000  0000 1010
+
+1.signed int= positive / negative
+================
+Size -: 4 Bytes (32 Bits) 
+Range -: -2G.....0.....+2G
+Mini -: -2G(-2147483648)
+Max -:  +2G(+2147483647)					
+					
+					
+
+#include <stdio.h>
+
+int main()
+{
+    unsigned int ch = 4294967295;
+    printf("Hello World\n");
+    printf("Value =%u\n",ch);
+
+    return 0;
+}
+------------------------------
+Explaination-:
+--------------------
+#include <stdio.h>
+
+int main()
+{
+     signed int ch = 4294967295;
+    printf("Hello World\n");
+    printf("Value =%d\n",ch);
+
+    return 0;
+}
+o/p = -1;
+==============
+
+signed char ch=255;
+-128  ....+127 
+        
+		0......+127 ((2^8)=256-127) = 129 count
+		
+		-X.....0.....+X (+x.... -x = 1 count)
+
+  129-1 =128
+	x=-128
+	  -128 ....0
+	  
+	   -128 .....0.....127
+=============================================================		
+Note -: 		
+	signed int ch = 2147483647;
+		o/p  = 2147483647;
+	signed int ch = 2147483648;
+		o/p  = -2147483648;
