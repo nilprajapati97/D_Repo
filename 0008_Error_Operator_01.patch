@@ -1,0 +1,143 @@
+Errors in C
+ 
+ 	1.Compile Time Errors
+ 	2.Runtime Errors
+ 	
+1.Compile Time Errors
+	pre processor
+		missed for headerfile stdio.h
+		  
+	Translator
+		synctatical error 
+			{,
+			semicollon missing
+			
+	Linker 	
+ 	   Predefine function -: strlen
+ 	   Userdefined function -: 
+ 	   
+ 	   
+ 	   
+ 	   
+ 	  int my_func(int , int); => prototype
+ 
+          my_function(23);
+          
+          not defined
+		  int my_func(int i, int j)
+		  {
+		    return i+j;
+		  }
+ 
+ 
+ 2. Runtime Error
+ 
+ 1.segmentation fault
+ 	- When a program attempts to access memory location  that is not allowed to access(Un authorised memory access)
+	Ex. Lower order memory access
+	    trying to change constant data	
+	
+ 2. BUs error	 
+ 	Hardware related errors
+ 	Memory not in HW but we are trying to aceess
+ 	
+3 Floating point Exception
+  devide by zero
+  Infinite are not possible .
+=============================================================
+
+
+2. Operators 
+*****************************
+
+1. Arithmetic Operators
+======================================================
+
++
+-
+%
+/
+
+1.Unary arithmetic
+	+X , -Y
+	
+#include <stdio.h>
+
+int main()
+{
+    int a= -100,b=200 ,c; 
+    printf("Hello World\n");
+    printf("a=%d b=%d\n",-a,-b);
+    c= -a;
+    printf("a=%d b=%d c=%d\n",a,b,c);
+    /*
+       -a
+       -(-100)
+       100
+       -b
+       -(200)
+       -200
+    */
+    return 0;
+}
+---------------
+O/p = 
+  
+	
+	
+2.Binary Arithmetic
+  Its used with 2 operator ;
+  
+   a+b, Sum
+   a-b sub
+   a%b Modulo
+   a/b div
+   a*b mul
+	
+
+#include <stdio.h>
+
+int main()
+{
+    int a= 200,b=10 ,c;
+    
+    printf("Hello World\n");
+    printf("Addition=%d\n",a+b);
+    printf("Subtraction=%d\n",a-b);
+    printf("Mul=%d\n",a*b);
+    printf("Div=%d\n",a/b);
+    printf("modulo=%d\n",a%7);
+
+    return 0;
+}
+
+Explaination -:
+-------------------
+  200/7
+   
+      7 | 200
+        | 28 | 4
+
+	
+2. Assignment Operators
+======================================================	
+	Assignment means we have to assign some value to another variable.
+      int a=23;
+	  
+		b= a+b,
+		int a=b=c=10;
+	  =a+b   ==>> Note left side should be operator
+	 
+      a=10,b=20
+	  23= a+b ;  // Left hand side should be variable not a real number
+#include <stdio.h>
+int main()
+{
+    int a= -100,b=5 ,c=30; 
+    printf("Hello World\n");
+    printf("before a=%d b=%d c=%d\n",a,b,c);
+    c+=a;   // c= c+a = 30+100 new value of c is 130
+    //c=-a;   // Unary operataor + Assignment
+    printf("After a=%d b=%d c=%d\n",a,b,c);
+    return 0;
+}
