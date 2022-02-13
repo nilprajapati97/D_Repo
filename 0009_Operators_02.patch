@@ -1,0 +1,111 @@
+3. Increment & Decrement Operator =
+====================================
+
+int i= 10;
+
+   i++;
+   ++1; 
+   
+3.1 -: Pre Increment /Decrement 
+------------------------------------
+#include <stdio.h>
+int main()
+{
+    int i= 20,j;
+    printf("Hello World\n");
+    
+    printf("Value of I =%d\n",i);
+    printf("Decrement=%d\n",--i);  // i=i-1
+    printf("Increment=%d\n",++i);  //i=i+1;
+    
+    printf("after all Value of I =%d\n",i);
+
+    return 0;
+}
+O/p=
+=======
+Hello World
+Value of I =20
+Decrement=19
+Increment=20
+after all Value of I =20
+
+
+Note -: Pre inc/Dec value is assign 1st and then it will modify.
+
+3.2Post Incre/Dec 
+=============
+
+Ex- 1
+============
+#include <stdio.h>
+
+int main()
+{
+    int i= 20,j;
+    printf("Hello World\n");
+    
+    printf("Value of I =%d\n",i);
+    printf("Decrement=%d\n",i--);  // i=i-1
+         //20 -: i=1-1 => 20-1=19
+        // i=19
+         
+    printf("Increment=%d\n",i++);  //i=i+1;  19= 19++= >> 20
+       //    i=20
+    printf("after all Value of I =%d\n",i);
+
+    return 0;
+}
+
+NOte -: In post operaton value is assigne 1st and then it will do increment or decrement.
+**********************************************************************************************
+
+Relational operator=:
+============================
+
+
+
+int a=21 b=32;
+    operator 		Meaning
+===============================
+     < 				less than
+	 <= 			less than equalto
+	 >				greater than
+	 >=				greater than equalto
+	 
+	 
+	#include <stdio.h>
+
+int main()
+{
+    int a= 100,b=900;
+    printf("Hello World\n");
+    printf("a <b  =%d\n",a<b);  // TRUE  = 1
+    printf("a <=b  =%d\n",a<=b);  // TRUE = 1
+    printf("a >b  =%d\n",a>b);  // False  =0
+    printf("a >=b  =%d\n",a>=b);  // False =0
+    printf("a == b  =%d\n",a==b);  // False =0
+   
+   if(a==b)
+            printf("a is big number\n");
+    printf("Hello\n");    
+        
+
+
+  
+    return 0;
+}
+===========================
+
+Hello World
+a <b  =1
+a <=b  =1
+a >b  =0
+a >=b  =0
+a == b  =0
+Hello
+
+
+
+
+
