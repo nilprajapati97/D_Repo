@@ -1,0 +1,143 @@
+Logical And  &&
+Logical OR   ||
+Logical Not   !
+
+And Operartion
+
+X Y O/p
+0 0 0
+0 1 0
+1 0 0
+1 1 1
+
+Note -: if both inputs are NON-Zero than and than only ooutput NON- Zero other wise zero value
+
+
+ a= 99, b=30;
+ 
+ 
+ c = a&&b;
+ 
+     NON-Zero && NON-Zero = NON-Zero
+	 
+Ex1 =:	 
+#include <stdio.h>
+
+int main()
+{
+    int a= 100,b=200 ,c ; 
+    printf("Hello World\n");
+    
+    printf("Before : a=%d b=%d\n",a,b);
+    printf("Values\n");
+    c= a && b;
+    printf("Result : a=%d  b=%d c=%d\n",a,b,c) ;
+
+    return 0;
+} 
+output -:
+
+Before : a=100 b=200
+Values
+Result : a=100  b=200 c=1	 
+
+Ex-2 -::
+int main()
+{
+    int a= 100,b=200 ,c, d=50,e=0 ; 
+    printf(" ======== Output ======\n");
+    
+    printf("Before : a=%d b=%d\n",a,b);
+    printf("Values\n");
+    c = e && (b=d);
+    printf("Result : a=%d  b=%d c=%d\n",a,b,c) ;
+
+    return 0;
+}
+ ======== Output ======
+Before : a=100 b=200
+Values
+Result : a=100  b=200 c=0
+
+
+Explaination -:
+a=100, b=200 ,d=0
+
+Note -: if any of opearand is like zero value than it will not consider other operation.
+
+    1st case -:c= a&& (b=50)  -: 
+				Non && (b(50));
+				NON && NON 
+	2st case -:c= d&& (b=50)  -: 
+				Zero && (Expression);
+				Zero  
+
+
+And Operartion
+
+X Y O/p
+0 0 0
+0 1 0
+		  
+Ex-:3
+#include <stdio.h>
+
+int main()
+{
+    int a= 100,b=200 ,c, d=50,e=0 ; 
+    printf(" ======== Output ======\n");
+    
+    printf("Before : a=%d b=%d\n",a,b);
+    printf("Values\n");
+    c = (e!=!1) && (b=d);
+    printf("Result : a=%d  b=%d c=%d\n",a,b,c) ;
+
+    return 0;
+}
+********************************************************
+
+
+	4.2  Logical or Boolean Operator
+
+Logical And  &&
+Logical OR   ||
+Logical Not   !
+
+Logical OR (||) Operartion
+
+X Y O/p
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+
+Note -: if both inputs are Zero than and than only output Zero value other wise Non-Zero value
+
+X Y O/p
+0 0 0 
+0 1 1  
+1 0 1  - Consider
+1 1 1  - consider
+
+Ex-1;
+#include <stdio.h>
+
+int main()
+{
+    int a= 100,b=200 ,c, d=50,e=0 ; 
+    printf(" ======== Output ======\n");
+    
+    printf("Before : a=%d b=%d\n",a,b);
+    printf("Values\n");
+    c = a || (b=d);
+    printf("Result : a=%d  b=%d c=%d\n",a,b,c) ;
+
+    return 0;
+}
+
+ 4.3 Not Operator 
+ 
+    X o/p
+	
+	1 0
+	0 1 
