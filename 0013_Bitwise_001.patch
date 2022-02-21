@@ -1,0 +1,150 @@
+Bit- Wise Operator and Excersise
+==============================================
+
+How to set and clear a bit
+=================================
+
+7654 3210  Position
+----------------
+0000 1010 = 10
+6th bit need to set to 1
+
+0100 1010 = 74 (What we wants)  
+
+And Opearation
+----------------
+x Y Op
+0 0  0 
+0 1  0  -
+1 0  0  - Consider
+1 1  1  - Consider
+
+OR Operation
+-------------------
+x Y Op
+0 0  0
+0 1  1
+1 0  1 - Consider   -- to set 1 
+1 1  1 - Consider
+
+0100 1010 = 10
+0100 0000 =
+0000 0000 =
+
+
+1
+&
+1
+=======
+1
+
+1
+&
+0
+--------
+0
+
+
+7654 3210  Position
+----------------
+0000 1010 = 10
+6th bit need to set to 1
+
+0100 1010 == Required
+
+ 
+
+OR Operation
+-------------------
+x Y(input) Op
+
+1 	0  		1 - Consider   -- to set 1 
+1 	1  		1 - Consider
+
+Steps
+===========
+7654 3210
+--------------------
+0000 1010 = 10
+0100 0000 =64  OR operation with 64
+-------------------------------
+
+for
+0000 0001 = 1 << 0
+0000 0010 = 1<<1
+0000 0100 = 1<<2
+0000 1000 = 1<<3
+0001 0000 = 1<<4
+0010 0000 = 1<<5
+0100 0000 = 1<<6 (Mask)
+if 1<<6
+
+0100 0000 =64 (1<<6)
+
+	0000 1010 = 10
+OR  0100 0000 = 1<<6
+==================================
+    0100 1010 = 0x4A
+(input) | (1<<6); your 6th bit will be set to 1
+
+result = 0100 1010 = 0x4A
+
+scan = input & position
+SET-BIT = num | (1<<POS);
+-------------------------------------------------------
+Exercise -:
+-----------------
+0000 1010 = Input
+0111 1010 = Desired
+-------------------------
+input = char no
+Input = char pos
+Input = char bits (Left) bits
+
+
+		0000 1010 = Input
+OR(|)	0111 0000 = Mask
+----------------------------
+		0111 1010 = Desired Output
+		
+	0111 0000 = Desired Mask
+	
+		???
+	0111 0000 = Desired
+	0000 0111 = X 
+	
+	0000 1110 =x <<1
+	0001 1100 =x <<2	
+	0011 1000 =x <<3	
+	0111 0000 =x <<4	
+		
+    0000 0111 =Mask ?
+   
+    1111 1111 = -1
+	1111 1000 =(-1<<bits)
+    0000 0111 = ~(-1<<bits) =M
+	0111 0000 =  M << (7-3)
+	
+	~(-1<<bits) << ( 7-bits)
+|
+	 No
+--------------------------------------------------	 
+Expression -: no | ((~(-1) <<bits) <<7-bits)
+
+
+Excersise
+
+Pos = 15
+Bits = 5
+No = Any integer Value  
+nil.prajapati97@yahoo.com
+
+Ex-2
+Hint-:
+
+1011 0000 = No
+1100 0010 = Desired	 
+	
+input = No
+Bits =  2 bits
+Rotation 2 
