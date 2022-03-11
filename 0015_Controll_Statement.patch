@@ -1,0 +1,129 @@
+Selection Statement -:
+--------------------------------
+
+if
+if else
+else...if
+
+
+if(Condition)
+      Statement/Block
+      ...........
+	   ...........
+	   
+Note -: True -: Statement or block shoul be execute
+        False -: statement after(block) if will be skipped.
+
+---------------------------
+1.2 -: if...else
+
+Syntax-:
+
+    if(Condition/Expression)
+		statement/block
+	else	
+		statement
+		
+Ex-1;
+-----
+#include <stdio.h>
+
+int main()
+{
+    //int a=28 , b=56;
+    //int a=100 , b=56;
+    int a=2,b=1; 
+    printf("Hello World");
+    
+    if(a<b)
+        printf("\nA=%d is SMALL\n",a); // TRUE Part
+    else
+        printf("\nB=%d is SMALL \n",b); //False Part
+    return 0;
+}	
+
+Ex-:2
+-----------
+#include <stdio.h>
+
+int main()
+{
+    //int a=28 , b=56;
+    //int a=100 , b=56;
+    int a=2,b=1; 
+    printf("Hello World");
+    
+    if(a<b);
+        printf("\nA=%d is SMALL\n",a); // TRUE Part
+    else
+        printf("\nB=%d is SMALL \n",b); //False Part
+    return 0;
+}
+
+o/p -:
+ main.c:20:5: error: ‘else’ without a previous ‘if’
+   20 |     else
+      |     ^~~~
+----------------------------------------
+	  //  7654 3210
+      //  0100 0000 = 64
+    char ch=64;
+	
+to check 6th bit is 0 or 1;
+  if((ch >>6  & 1)==1)
+     printf("6th Bit is 1");
+  else
+     printf("6th Bit is 1");	
+
+Juhin -: logical
+Kamal-: Arithmetic
+Dhruvi -: Binary Operator (Binary And)
+			
+Shakib-:
+Rajan -:
+	Expression 
+	     0100 0000 = ch
+		 0000 0001 = ch>>6
+		&0000 0001 =
+----------------------------------
+         0000 0001 = 
+		 
+#include <stdio.h>
+
+int main()
+{
+    unsigned char ch=128 ;
+    
+    printf("Hello World");
+    //  7654 3210
+    //  0100 0000 = 64
+    //  1000 0000 =128
+    
+  if((ch >>6  & 1)==1)
+     printf("\n6th Bit is 1\n");
+  else
+     printf("\n6th Bit is 0\n");
+    return 0;
+}	     
+---------------------------------------------------
+
+#include <stdio.h>
+
+int main()
+{
+    unsigned char ch=128 ;
+    
+    printf("Hello World");
+    //  7654 3210
+    //  0100 0000 = 64
+    //  1000 0000 =128
+    
+  if((ch >>7  & 1))
+     printf("\n7th Bit is 1\n");
+  else
+     printf("\n7th Bit is 0\n");
+    return 0;
+}
+---------------------------------------
+Notice -: Less of Codding Practice 
+	   -: 
