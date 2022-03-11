@@ -1,0 +1,90 @@
+Turnary operator-:
+=========================
+Sysntax -:
+			condition(Expression)?TRUE:FALSE;
+
+Also known as Ternary operator. The main purpose of conditional operators is in decision making statements. It is similar to an if-else statement.
+
+Syntax of a conditional operator:-
+
+Expression1? statement1: statement2; 
+Expression1 is a boolean expression, it can be either true or false.
+If the Expression1 returns true then statement1 will get executed.
+If the Expression1 returns false then statement2 will get executed.			
+			
+Ex-1
+----
+#include <stdio.h>
+
+int main()
+{
+  int a = 10, b = 20, c;
+
+//condition(Expression)?TRUE:FALSE;
+
+   c = (a < b) ? a : b;
+
+  printf("value=%d\n", c);
+}
+
+o/p= 10
+---------------------------------------
+
+Ex-2;
+---------
+#include <stdio.h>
+
+int main()
+{
+  int a = 10, b = 20, c , d;
+
+//condition(Expression)?TRUE:FALSE;
+
+   //c = a? a : b;
+    //c = -1? a : b;
+    c = 0? printf("True\n") :printf("false\n");
+    d=printf("123456789\n");
+    
+      printf("value=%d d=%d\n", c,d);
+      
+      
+      
+}
+O/p =:
+
+ false
+123456789
+value=6 d=10
+
+Ex -:3
+-------------
+#include <stdio.h>
+
+int main()
+{
+  int a = 10, b = 20, c , d;
+
+//condition(Expression)?TRUE:FALSE;
+
+   //c = a? a : b;
+    c = 1? b-20? 10 : 20 :30;
+      // TRUE -;  b-20? 10 : 20
+      //                 TRUE=10 ,FALSE=20
+
+      // FALSE -: 30
+      printf("value=%d \n", c);
+      
+      
+      
+}
+
+Operator Precedence in C -- Sunday
+
+
+
+
+
+
+
+
+			
