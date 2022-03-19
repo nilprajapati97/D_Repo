@@ -1,0 +1,140 @@
+
+	int Marks = 78;
+      // 0 -30 = Grade Fail 
+      // 31 -45 = Grade D
+      // 46 -60 = Grade C
+      // 60 -85 = Grade B
+      // 86 -100 = Grade A
+	  
+	  
+Rajan-: Incre / Decere	  
+
+      // C program to illustrate nested-if statement
+
+int Marks = 78;
+      // 0 -30 = Grade Fail 
+      // 31 -45 = Grade D
+      // 46 -60 = Grade C
+      // 60 -85 = Grade B
+      // 86 -100 = Grade A
+	if (Marks >= 86 )
+		printf("Marks Grade is  A");
+
+	else if (Marks )
+		printf("Marks Grade is  B");
+
+	else if (Marks)
+		printf("Marks Grade is  C");
+	else if (Marks)
+		printf("Marks Grade is  D");
+	else if (Marks)
+		printf("Marks Grade is  Fail");		
+	else
+		printf("Marks are not valid");
+
+	return 0;
+}
+--------------------------------------------------------
+Shakib-: increment / Decrememt,   
+-----------------
+int Marks = 78;
+      // 0 -30 = Grade Fail 
+      // 31 -45 = Grade D
+      // 46 -60 = Grade C
+      // 60 -85 = Grade B
+      // 86 -100 = Grade A
+	if ( )
+		printf("Marks Grade is  A");
+	else if (Marks )
+		printf("Marks Grade is  B");
+
+	else if (Marks)
+		printf("Marks Grade is  C");
+	else if (Marks)
+		printf("Marks Grade is  D");
+	else if (Marks)
+		printf("Marks Grade is  Fail");		
+	else
+		printf("Marks are not valid");
+
+======================================================
+
+Kamal-: < and > ,	  
+
+      // C program to illustrate nested-if statement
+
+int Marks = 78;
+      // 0 -30 = Grade Fail 
+      // 31 -45 = Grade D
+      // 46 -60 = Grade C
+      // 60 -85 = Grade B
+      // 86 -100 = Grade A
+	if ( )
+		printf("Marks Grade is  A");
+
+	else if (Marks )
+		printf("Marks Grade is  B");
+
+	else if (Marks)
+		printf("Marks Grade is  C");
+	else if (Marks)
+		printf("Marks Grade is  D");
+	else if (Marks)
+		printf("Marks Grade is  Fail");		
+	else
+		printf("Marks are not valid");
+----------------------------------------------------------------------
+
+Juhin-: relational operator, < > <=, >=, 	  
+
+      // C program to illustrate nested-if statement
+
+int Marks = 42;
+      // 0 -30 = Grade Fail 
+      // 31 -45 = Grade D
+      // 46 -60 = Grade C
+      // 60 -85 = Grade B
+      // 86 -100 = Grade A
+	  
+	if (Marks < = 100 )
+		printf("Marks Grade is  A");
+	else if (Marks <=85 )
+		printf("Marks Grade is  B");
+	else if (Marks <= 60)
+		printf("Marks Grade is  C");
+	else if (Marks <= 45)
+		printf("Marks Grade is  D");
+	else if (Marks <= 30)
+		printf("Marks Grade is  Fail");		
+	else
+		printf("Marks are not valid");
+===============================================
+
+
+// 0 -30 = Grade Fail 
+// 31 -45 = Grade D
+// 46 -60 = Grade C
+// 60 -85 = Grade B
+// 86 -100 = Grade A
+Marks= 500
+
+if(Marks >=0 && Marks <=30)
+		Fail
+else if(Marks >=31 && Marks <=45)
+		D
+else if(Marks >=46 && Marks <=60)
+		C
+else if(Marks >=61 && Marks <=85)
+		B
+else if(Marks >=86 && Marks <=100)
+		A
+else
+    printf("Not Valid Marks\n");
+		
+--------------------------------------------
+Que -: Write a program to print GRade system on Marks.
+
+		
+		
+		
+		
